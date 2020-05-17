@@ -1,0 +1,10 @@
+.fondo-footer{
+    background-color: #FFB577 ; 
+}
+.tamaño{
+    font-size: 1.7em;
+    color: black;
+}
+.cambioColor:hover {
+    color: rgb(0, 0, 160);
+}

@@ -1,0 +1,96 @@
+<div class="row justify-content-center">
+    <div class="col-11 text-center encabezadoForm font-weight-bold pb-2 pt-2">
+        Registrate:
+    </div>
+    <form class="col-11 cuerpoForm text-left " #formregistro="ngForm">
+        <div class="form-group row pt-2">
+          <label for="nombre" class="col-sm-4 col-form-label">Nombre: </label>
+          <div class="col-sm-8">
+            <input type="text" class="form-control" #nombre placeholder="Nombre" required>
+            <!-- <div *ngIf="nombre.invalid && (nombre.dirty || nombre.touched)" class="bg-danger mt-1 text-white col-sm-12 offset-md-4 col-md-8"> 
+              <div *ngIf="nombre.errors.required"> Nombre es requerido.</div> 
+            </div> -->
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="date" class="col-sm-4 col-form-label">Fecha de Nacimiento: </label>
+            <div class="col-sm-8">
+                <input type="date" id="date" class="form-control" name="fecha" required min="1950-01-01" max="2000-12-31">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="cp" class="col-sm-4 col-form-label">Codigo Postal: </label>
+            <div class="col-sm-8">
+                <input type="number" class="form-control" id="cp" name="cp" placeholder="ej: 4608">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="tel" class="col-sm-4 col-form-label">Telefono: </label>
+            <div class="col-sm-8">
+                <input type="number" id="tel" class="form-control" name="tel" placeholder="4444-333">
+            </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-4 col-form-label">Contraseña: </label>
+          <div class="col-sm-8">
+            <input type="password" class="form-control" id="inputPassword" placeholder="*****">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword2" class="col-sm-4 col-form-label">Confirmar Contraseña: </label>
+            <div class="col-sm-8">
+              <input type="password" class="form-control" id="inputPassword2" placeholder="*****">
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="row">
+              <legend class="col-form-label col-sm-4 pt-0">Sexo: </legend>
+              <div class="col-sm-8">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="M" checked>
+                  <label class="form-check-label" for="gridRadios1">
+                    Masculino
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="F">
+                  <label class="form-check-label" for="gridRadios2">
+                    Femenino
+                  </label>
+                </div>             
+              </div>
+            </div>
+          </fieldset>
+          <div	class="form-group row">
+            <label	for="selector" class="col-sm-4 col-form-label">Pais: </label>
+            <div class="col-sm-8">
+                <select class="form-control" id="selector">
+                    <option>Argentina</option>
+                    <option>Colombia</option>
+                    <option>Rusia</option>
+                </select>
+            </div>
+        </div>
+          <div class="form-group row">
+            <label for="email" class="col-sm-4 col-form-label">Email: </label>
+            <div class="col-sm-8">
+              <input type="email" class="form-control" id="email" placeholder="algo@algo.com">
+            </div>
+        </div>
+        <div class="form-group row">
+              <label for="email2" class="col-sm-4 col-form-label">Confirmar Email: </label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="email2" placeholder="algoConfirmado@algo.com">
+              </div>
+        </div>
+
+        <hr>
+        <div class="form-group row">
+            <div class="col-sm-12 text-center">
+                <button type="submit" class="btn boton m-2" (click)="formregistro.reset()">Enviar</button>
+                <button type="submit" class="btn boton m-2" (click)="formregistro.reset()">Cancelar</button>
+            </div>
+        </div>
+      </form>
+</div>

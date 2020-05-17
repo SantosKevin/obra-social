@@ -1,0 +1,14 @@
+.fondo{
+    background-color: #FFB577 ; 
+}
+.fondo-2{
+    background-color: #FFC593;
+}
+ul li a:hover{
+    background-color: #FFB577;
+    color: rgb(59, 59, 59)
+}
+
+.menuC:hover{
+    background-color: #FFB577;
+}

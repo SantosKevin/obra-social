@@ -1,0 +1,26 @@
+<ngb-carousel *ngIf="images" >
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="picsum-img-wrapper">
+      <img [src]="image" alt="maraton">
+    </div>
+    <div class="carousel-caption">
+      <h3>Imagenes de nuestra maraton</h3>
+      <p>Puede moverse con las flechas o con los botones de abajo</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<hr>
+
+<div class="row">
+  <div class="col-12">
+    <h3>En esta seccion podra ver algunos eventos</h3>
+    <p>En estas imagenes usted puede ver nuestra maraton, este evento organizado por
+    nosotros el 20 de noviembre del 2019
+    </p>
+    <p>Como podra apreciar, participaron mucha gente las cuales comentaron y dieron su agradecimiento a nosotros por el evento todos les agradó.
+      Si tu tambien quieres participar del proximo evento, esté atento a nuestras proximas noticias.
+    </p>
+  </div>
+    
+</div>

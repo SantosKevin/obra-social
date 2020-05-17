@@ -1,0 +1,17 @@
+.encabezadoForm{
+    background-color:  rgb(252, 192, 141);
+    font-size: 1.3em;
+}
+.cuerpoForm{
+    background-color:  rgb(250, 223, 200);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.boton{
+    background: transparent;
+    border: 1px solid black;
+    border-radius: .3em;
+}
+.boton:hover{
+    background: rgb(255, 183, 120);
+}
